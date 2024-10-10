@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React SQLite Blog</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        console.error('Global error:', message, source, lineno, colno, error);
+        document.body.innerHTML += '<div style="color: red; padding: 20px;">An error occurred. Please check the console for details.</div>';
+      }
+    </script>
+  </body>
+</html>
